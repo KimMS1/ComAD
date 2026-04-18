@@ -147,7 +147,7 @@ def fuse_and_eval_sum(comad_out, patch_out):
             )
             res["struct_only"] = struct_auc
 
-    # 4) ✅ overall = logical_only와 struct_only의 평균(둘 중 하나만 있으면 그 값 사용)
+    # 4) overall = logical_only와 struct_only의 평균(둘 중 하나만 있으면 그 값 사용)
     if (logical_auc is not None) and (struct_auc is not None):
         res["overall"] = float((logical_auc + struct_auc) / 2.0)
     elif (logical_auc is not None) or (struct_auc is not None):
