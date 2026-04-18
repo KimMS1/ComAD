@@ -1,6 +1,6 @@
 # ComAD + PatchCore for MVTec LOCO
 
-This repository combines [ComAD](https://github.com/liutongkun/ComAD) and [PatchCore](https://github.com/amazon-science/patchcore-inspection) for anomaly detection on the [MVTec LOCO AD](https://www.mvtec.com/company/research/datasets/mvtec-loco) dataset.
+Unofficial implementation of [ComAD](https://github.com/liutongkun/ComAD) combined with [PatchCore](https://github.com/amazon-science/patchcore-inspection) for anomaly detection on the [MVTec LOCO AD](https://www.mvtec.com/company/research/datasets/mvtec-loco) dataset.
 
 ---
 
