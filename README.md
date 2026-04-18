@@ -6,7 +6,10 @@ This repository combines [ComAD](https://github.com/liutongkun/ComAD) and [Patch
 
 ## Changes from Original
 
-- **Validation-based score normalization** (`fusion_runner.py`): Anomaly scores from ComAD and PatchCore are independently normalized using mean and standard deviation computed from the normal validation set. To improve robustness against outliers, only scores within the 20th–80th percentile range are used for statistics estimation. The normalized scores are then fused via z-score summation.
+This repository was used as a baseline in our paper:  
+**"Heterogeneous Multi-Score Integration for Structural and Logical Anomaly Detection"** (IEEE Access, 2026)
+
+As noted in the paper, directly summing ComAD and PatchCore scores leads to instability due to scale mismatch. To address this, score normalization was added in `fusion_runner.py`: anomaly scores from each method are independently normalized using mean and standard deviation computed from the normal validation set. To improve robustness against outliers, only scores within the 20th–80th percentile range are used for statistics estimation. The normalized scores are then fused via z-score summation.
 
 ---
 
